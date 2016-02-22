@@ -17,7 +17,7 @@ public class ImageViewerFrame extends JFrame{
     private static final int DEFAULT_HEIGHT = 200;
 
     private JLabel label = null;
-    private static Logger logger = Logger.getLogger("com.bruce.corejava");
+    private static Logger logger = Logger.getLogger("com.bruce.core");
 
     public ImageViewerFrame(){
         logger.entering("ImageViewFrame","<init>");
@@ -36,6 +36,8 @@ public class ImageViewerFrame extends JFrame{
         menu.add(exitItem);
         exitItem.addActionListener(new ActionListener(){
             public void actionPerformed(ActionEvent event){
+                logger.fine("Exiting.");
+                System.out.println("keyima");
                 System.exit(0);
             }
         });

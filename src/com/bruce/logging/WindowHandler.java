@@ -31,6 +31,7 @@ public class WindowHandler extends StreamHandler {
     }
     public void publish(LogRecord record){
         if(!frame.isVisible()) return ;
+        System.out.println(record.toString());
         super.publish(record);
         flush();
     }
