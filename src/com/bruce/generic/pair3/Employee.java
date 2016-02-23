@@ -11,6 +11,12 @@ public class Employee {
     private double salary;
     private Date hireDay;
 
+    public Employee(String name){
+        this.name = name;
+        this.salary = 0;
+        GregorianCalendar calendar = new GregorianCalendar();
+        hireDay = calendar.getTime();
+    }
     public Employee(String name, double salary, int year, int month, int day){
         this.name = name;
         this.salary = salary;
@@ -33,5 +39,9 @@ public class Employee {
     public void raiseSalary(double byPrecent){
         double raise = salary*byPrecent/100;
         salary += raise;
+    }
+
+    public String toString(){
+        return "[ Name = "+name +", Salary="+salary +", HireDay= "+hireDay+"]";
     }
 }
