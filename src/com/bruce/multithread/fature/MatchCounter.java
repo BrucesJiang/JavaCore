@@ -1,6 +1,6 @@
 package com.bruce.multithread.fature;
 
-import com.bruce.generic.pair3.Manager;
+
 
 import java.io.File;
 import java.io.IOException;
